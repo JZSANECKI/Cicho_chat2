@@ -253,7 +253,7 @@ strong {
   scroll-margin-block-start: 56px;
 }
 
-@media only screen and (max-width: 442px) {
+@media only screen and (max-width: 576px) {
   * {
     line-height: 1.2;
   }
@@ -263,6 +263,9 @@ strong {
 
   .blok {
     height: 50vh;
+  }
+  #room-thumbnail{
+    display:none;
   }
 }
 
