@@ -244,7 +244,6 @@ strong {
 
 #kontakt {
   background-color: white;
- 
 }
 #miejsce,
 #pokoje,
@@ -264,8 +263,8 @@ strong {
   .blok {
     height: 50vh;
   }
-  #room-thumbnail{
-    display:none;
+  #room-thumbnail {
+    display: none;
   }
 }
 
