@@ -183,7 +183,7 @@ h4 {
   position: relative;
   height: 80vh;
   overflow: hidden;
-  border-radius: 5px;
+  
 }
 .room > a {
   height: inherit;
