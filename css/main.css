@@ -4,6 +4,26 @@
   padding: 0;
   line-height: 1.5em;
 }
+#loading {
+  position: fixed;
+  display: block;
+  width:100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  text-align: center;
+  opacity: 0.7;
+  background-color: #fff;
+  z-index: 99;
+}
+
+#loading-image {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-100px,-100px);
+}
 
 body {
   position: relative;
