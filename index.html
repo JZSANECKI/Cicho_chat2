@@ -1,249 +1,295 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cicho Chat</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css" />
-    <script
-      src="https://kit.fontawesome.com/3a050c0207.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cicho Chat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/3a050c0207.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
   <body data-bs-spy="scroll" data-bs-target="#navbar">
     <div id="loading">
-      <img id="loading-image" src="http://serwer2223309.home.pl/cicho_chat/img/spinner.svg" alt="Loading..." />
+      <img id="loading-image" src="http://serwer2223309.home.pl/cicho_chat/img/spinner2.svg" alt="Loading..." />
     </div>
-
   <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100" style="padding-right:20px;">
-  <div class="container">
-    <a class="navbar-brand" href="#">cicho chat</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      style="border: 0"
-    >
-      <i class="fa-solid fa-bars burger"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto">
-        
-        
-        <a class="nav-link" href="#pokoje" >pokoje</a>
-        <a class="nav-link" href="#cennik">cennik</a>
-        <a class="nav-link" href="gallery.html">zdjęcia</a>
-        <a class="nav-link" href="dom.html">historia</a>
-        <a class="nav-link" href="#kontakt">kontakt</a>
+    <div class="container">
+      <a class="navbar-brand" href="#"><img width="100px" src="http://serwer2223309.home.pl/cicho_chat/img/CICHOCHAT_BEZ TŁA_CZARNE.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="border: 0">
+        <i class="fa-solid fa-bars burger"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+
+
+          <a class="nav-link" href="#pokoje">pokoje</a>
+          <a class="nav-link" href="#cennik">cennik</a>
+          <a class="nav-link" href="gallery.html">zdjęcia</a>
+          <a class="nav-link" href="dom.html">historia</a>
+          <a class="nav-link" href="#kontakt">kontakt</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
- 
-<header>
-<div class="bg-wrap" style="height:100vh;">
-<div class="bg image-dark" style="background-image: url('http://serwer2223309.home.pl/cicho_chat/img/cichochat_dom.jpg');"></div>
-  <div class="shadow"></div>
-  <div class="herotxt">
-  <h1>CICHO CHAT</h1>
-<p>AGROTURYSTYKA W&nbsp;KRAINIE WYGASŁYCH WULKANÓW</p></div>
-</div>
-</header>
-<div style="height:100vh;"></div>
-<div class="container">
-<div id="cytat">
-  <div id="opis"><h2>Na&nbsp;niewielkim wzgórzu</h2><p>…wśród łąk i&nbsp;pól uprawnych stoi dwustuletni dom ryglowy. Przed&nbsp;domem rozpościera się widok na&nbsp;Ostrzycę – polską Fudżijamę.<br /><br />Wiekowe lipy i&nbsp;jesiony otulają ogród i&nbsp;zaglądają przez&nbsp;okna domu. Jest przytulnie, magicznie, a&nbsp;goście spędzają tu&nbsp;czas tak, jak&nbsp;lubią.</p>
+
+  <header>
+    <div class="bg-wrap" style="height:100vh;">
+      <div class="bg image-dark" style="background-image: url('http://serwer2223309.home.pl/cicho_chat/img/cichochat_dom.jpg');"></div>
+      <div class="shadow"></div>
+      <div class="herotxt">
+
+        <img style="width:80%; max-width:500px;" src="http://serwer2223309.home.pl/cicho_chat/img/CICHOCHAT_BEZ TŁA_BIALE_haslo.svg" alt="">
+
+      </div>
     </div>
-  <br><p id=odpocznij>Zapraszam!</p>
-</div>
-
-<!--miejsce-->
-<div class="row px-0" id="miejsce">
-<div class="col-md-6 flexy content_white"> 
-  <div class="teksty"><h2>W&nbsp;domu na&nbsp;gości czekają</h2><ul><br>
-    <li>3 pokoje, każdy z&nbsp;łazienką (ręczniki, kosmetyki),</li>
-   <li>dwujęzyczna biblioteka z&nbsp;wygodną sofą, fotelem,</li>
-   <li>na&nbsp;parterze dobrze wyposażona kuchnia,</li>
-   <li>salon z&nbsp;kominkiem i&nbsp;8-osobowym stołem,</li>
-   <li>brzozowy strych z&nbsp;salą idealną do&nbsp;medytacji czy&nbsp;jogi.</li>
-   
-  </ul>
-  
-  </div>
-</div>
-<div class="col-md-6 flexy_image" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/d1.jpg);">
-</div>
-</div>
-
-<!-- Pokoje -->
-<div class="row px=0 flexy" id="pokoje">
-<div class="flexy"><h2><br>Pokoje<br><br></h2></div>
-<div class="row px-0" style=" max-width:1200px; gap:10px;" >
-<div class="col-md room px-0" ><a href="lawendowy.html"><div class="room_in" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6075.jpg);"></div><h3 class="room_name">LAWENDOWY</h3></div></a>
-<div class="col-md room px-0" ><a href="zielony.html"><div class="room_in" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/zielony/IMG_6074.jpg);"></div><h3 class="room_name">ZIELONY</h3></div></a>
-<div class="col-md room px-0" ><a href="bialy.html"><div class="room_in" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/bialy/IMG_6102.jpg);"></div><h3 class="room_name">BIAŁY</h3></div></a>
-<div style="height:40px;"></div>
-</div>
-</div>
-
-<!--Kuchnia-->
-<div class="row rev">
-<div class="col-md-6 flexy_image rev" flexy_image style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/cichochat_kuchnia.jpg);">
-</div>
-<div class="col-md-6  flexy content_bege">  
-  <div class="teksty"><h2>Kuchnia</h2>
-  <p> Na&nbsp;parterze obszerna kuchnia z&nbsp;piecem kaflowym z&nbsp;bolesławieckich, przedwojennych kafli łączy się z&nbsp;jadalnią z&nbsp;kominkiem. Dom jest wegetariański, gotujemy tylko jarsko.<br><br>Do dyspozycji gości jest:
-    <ul>
-    <li>lodówka z&nbsp;zamrażarką,</li>
-    <li>zmywarka,</li>
-    <li>5-palnikowa kuchenka,</li>
-    <li>cała masa kuchennego sprzętu,</li>
-    <li>w jadalni stół dla 8 osób.</li>
-    </ul> 
-  </p>
-  </div>
-</div>
-</div>
-
-<!--jadalnia i Strych-->
-<div class="row">
-<div class="col-md-6  flexy content_white">
-  <div class="teksty"><h2>Salon</h2>
-    <p> Salon z&nbsp;modrzewiową podłogą i&nbsp;wiekowym, oryginalnym sufitem zaprasza do&nbsp;biesiadowania przy&nbsp;drewnianym stole dla&nbsp;8 osób. Obok piękna, odrestaurowana kanapa i&nbsp;fotele przy&nbsp;kominku.
-</p>
-<h2>Poddasze</h2>
-<p> Otwarta dla&nbsp;gości brzozowa sala do&nbsp;medytacji, jogi, czytania lub&nbsp;innych zajęć. Pełno tu&nbsp;światła, a&nbsp;widok rysuje się w&nbsp;nieskończoność. To&nbsp;ulubione miejsce odwiedzającego nas&nbsp;czasem szopa pracza…
-</p>
- 
- </div>
-</div>
-<div class="col-md-6 flexy_image" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/cichochat_jadalnia.jpg);"></div>
-</div>
-
-<!--Cennik-->
-
-<div class="row align-items-center " style="flex-direction:column;"id="cennik">
-<div  class="col text-center" style="padding-top:40px;"><h2>Cennik</h2></div>
-<div class="col text-center" ><strong >250 zł za pokój/doba</strong></div>
-<div class="col-10 text-center"><p><br>
-  Cena obejmuje wegetariańskie śniadania (dowolna godzina po&nbsp;wcześniejszym umówieniu). Gospodyni może też&nbsp;przyrządzić wegetariańskie obiady. W&nbsp;sezonie ekologiczne jarzyny i owoce rosną tuż&nbsp;obok – w&nbsp;warzywniku.<br>Koszt obiadu dla&nbsp;jednej osoby to&nbsp;50 zł.</p><br>
-</div>
-</div>  
-
-<!--dodaltoke info-->
-<div class="row">
-  <div class="col-md-7 flexy content_white"><div class="teksty"><h2>Dodatkowe informacje</h2>
-     <ul>
-        <li>Dom jest przystosowany dla&nbsp;sprawnych fizycznie osób dorosłych.</li>
-        <li> Samochody zostawiamy przy&nbsp;niewielkim podejściu pod&nbsp;domem.</li>
-        <li> Zapraszamy na&nbsp;minimalnie dwie noce.</li>
-        <li> Gotujemy tylko wegetariańsko i&nbsp;o&nbsp;to samo prosimy gości.</li>
-        <li>Papierosy pali się jedynie na&nbsp;zewnątrz.</li>
-        
-      </ul>
+  </header>
+  <div style="height:100vh;"></div>
+  <div class="container">
+    <div id="cytat">
+      <div id="opis">
+        <h2>Na&nbsp;niewielkim wzgórzu</h2>
+        <p>…wśród łąk i&nbsp;pól uprawnych stoi dwustuletni dom ryglowy. Przed&nbsp;domem rozpościera się widok
+          na&nbsp;Ostrzycę – polską Fudżijamę.<br /><br />Wiekowe lipy i&nbsp;jesiony otulają ogród i&nbsp;zaglądają
+          przez&nbsp;okna domu. Jest przytulnie, magicznie, a&nbsp;goście spędzają tu&nbsp;czas tak, jak&nbsp;lubią.</p>
+      </div>
+      <br>
+      <p id=odpocznij>Zapraszam!</p>
     </div>
-  </div>
-  <div class="col-md-5 flexy_image" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/cichochat_jadalnia.jpg);">
-  </div>
-</div>
+
+    <!--miejsce-->
+    <div class="row px-0" id="miejsce">
+      <div class="col-md-6 flexy content_white">
+        <div class="teksty">
+          <h2>W&nbsp;domu na&nbsp;gości czekają</h2>
+          <ul><br>
+            <li>3 pokoje, każdy z&nbsp;łazienką (ręczniki, kosmetyki),</li>
+            <li>dwujęzyczna biblioteka (polsko/francuska) z&nbsp;wygodną sofą, fotelem,</li>
+            <li>na&nbsp;parterze dobrze wyposażona kuchnia,</li>
+            <li>salon z&nbsp;kominkiem i&nbsp;8-osobowym stołem,</li>
+            <li>brzozowy strych z&nbsp;salą idealną do&nbsp;medytacji czy&nbsp;jogi.</li>
+
+          </ul>
+
+        </div>
+      </div>
+      <div class="col-md-6 flexy_image" style="background-image:url(img/d1.jpg);">
+      </div>
+    </div>
+
+    <!-- Pokoje -->
+    <div class="row px=0 flexy" id="pokoje">
+      <div class="flexy">
+        <h2><br>Pokoje<br><br></h2>
+      </div>
+      <div class="row px-0" style=" max-width:1200px; gap:10px;">
+        <div class="col-md room px-0"><a href="lawendowy.html">
+            <div class="room_in" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6075.jpg);"></div>
+            <h3 class="room_name">LAWENDOWY</h3>
+        </div></a>
+        <div class="col-md room px-0"><a href="zielony.html">
+            <div class="room_in" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/zielony/IMG_6074.jpg);"></div>
+            <h3 class="room_name">ZIELONY</h3>
+        </div></a>
+        <div class="col-md room px-0"><a href="bialy.html">
+            <div class="room_in" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/bialy/IMG_6102.jpg);"></div>
+            <h3 class="room_name">BIAŁY</h3>
+        </div></a>
+        <div style="height:40px;"></div>
+      </div>
+    </div>
+
+    <!--Kuchnia-->
+    <div class="row rev">
+      <div class="col-md-6 flexy_image rev" flexy_image style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/cichochat_kuchnia.jpg);">
+      </div>
+      <div class="col-md-6  flexy content_bege">
+        <div class="teksty">
+          <h2>Kuchnia</h2>
+          <p> Na&nbsp;parterze obszerna kuchnia z&nbsp;piecem kaflowym z&nbsp;bolesławieckich, przedwojennych kafli
+            łączy się z&nbsp;jadalnią z&nbsp;kominkiem. Dom jest wegetariański, gotujemy tylko jarsko.<br><br>Do
+            dyspozycji gości jest:
+          <ul>
+            <li>lodówka z&nbsp;zamrażarką,</li>
+            <li>zmywarka,</li>
+            <li>5-palnikowa kuchenka,</li>
+            <li>cała masa kuchennego sprzętu,</li>
+            <li>w jadalni obszerny stół.</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--jadalnia i Strych-->
+    <div class="row">
+      <div class="col-md-6  flexy content_white">
+        <div class="teksty">
+          <h2>Salon</h2>
+          <p> Salon z&nbsp;modrzewiową podłogą i&nbsp;wiekowym, oryginalnym sufitem zaprasza do&nbsp;biesiadowania
+            przy&nbsp;drewnianym stole dla&nbsp;8 osób. Obok piękna, odrestaurowana kanapa i&nbsp;fotele
+            przy&nbsp;kominku.
+          </p>
+          <h2>Poddasze</h2>
+          <p> Otwarta dla&nbsp;gości brzozowa sala do&nbsp;medytacji, jogi, czytania lub&nbsp;innych zajęć. Pełno
+            tu&nbsp;światła, a&nbsp;widok rysuje się w&nbsp;nieskończoność. To&nbsp;ulubione miejsce odwiedzającego
+            nas&nbsp;czasem szopa pracza…
+          </p>
+
+        </div>
+      </div>
+      <div class="col-md-6 flexy_image" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/d2.jpg);"></div>
+    </div>
+
+    <!--Cennik-->
+
+    <div class="row align-items-center " style="flex-direction:column;" id="cennik">
+      <div class="col text-center" style="padding-top:40px;">
+        <h2>Cennik</h2>
+      </div>
+      <div class="col text-center"><strong>250 zł za pokój/doba</strong></div>
+      <div class="col-10 text-center">
+        <p><br>
+          Gospodyni może też&nbsp;przyrządzić wegetariańskie obiady. W&nbsp;sezonie ekologiczne jarzyny i owoce rosną
+          tuż&nbsp;obok –
+          w&nbsp;warzywniku.<br>Koszt obiadu dla&nbsp;jednej osoby to&nbsp;50 zł.</p><br>
+      </div>
+    </div>
+
+    <!--dodaltoke info-->
+    <div class="row">
+      <div class="col-md-6 flexy content_white">
+        <div class="teksty">
+          <h2>Dodatkowe informacje</h2>
+          <ul>
+            <li>Dom jest przystosowany dla&nbsp;sprawnych fizycznie osób dorosłych.</li>
+            <li> Samochody zostawiamy przy&nbsp;niewielkim podejściu pod&nbsp;domem.</li>
+            <li> Zapraszamy na&nbsp;minimalnie dwie noce.</li>
+            <li> Gotujemy tylko wegetariańsko i&nbsp;o&nbsp;to samo prosimy gości.</li>
+            <li>Papierosy pali się jedynie na&nbsp;zewnątrz.</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 flexy_image" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/cichochat_jadalnia.jpg);">
+      </div>
+    </div>
 
 
-<!--kot-->
-<div class=" flexy kot_bg content_bege" style="padding:40px 0px 40px 0px;">  
-  <div class="text-center col-10"><h2>Psst...</h2><p>W domu mieszkają dwa koty, które&nbsp;zadomowiły się też&nbsp;w&nbsp;nazwie domu: Cicho Chat („chat” znaczy po francusku „kot”). Zapraszamy do&nbsp;odwiedzin bez&nbsp;zwierząt, ale będzie kogo pogłaskać.</p>
-  </div>
-</div>
+    <!--kot-->
+    <div class=" flexy kot_bg content_bege" style="padding:40px 0px 40px 0px;">
+      <div class="text-center col-10">
+        <h2>Psst...</h2>
+        <p>W domu mieszkają dwa koty, które&nbsp;zadomowiły się też&nbsp;w&nbsp;nazwie domu: Cicho Chat („chat” znaczy
+          po francusku „kot”). Zapraszamy do&nbsp;odwiedzin bez&nbsp;zwierząt, ale będzie kogo pogłaskać.</p>
+      </div>
+    </div>
 
 
-<!-- dodatkowe informacje-->
+    <!-- dodatkowe informacje-->
 
-<div class="row content_white align-items-center" style="padding:40px 0px 40px 0px; flex-direction:column"id="cennik">
-  <div class="text-center col-10"><h2>Okolica i atrakcje</h2></div>
-  
-  <div class="col-10"><p class="text-center" ><br>
-     Tu jesteśmy: Marczów, Pogórze Kaczawskie, Dolny Śląsk (między Złotoryją i Jelenią Górą).<br> Przez wieś przebiega malowniczy żółty szlak łączący Wleń z Dębowym Gajem.</p><br></div>
-  <div class="atrakcje">
-  <div class="teksty_atrakcje"><strong>Co można u nas robić</strong><br><br>
-  <ul>
-  <li>Ogród pełen zakamarków – każdy spędza czas, jak&nbsp;lubi.</li>
-  <li>Przestrzeń i widoki idealne na plener malarski.</li>
-  <li>Dobry internet (światłowód), jeśli chcesz popracować.</li></ul><br><strong>
-  Dla chętnych</strong><br><br>
-  <ul>
-  <li>Kurs z kuchni makrobiotycznej zakończony wspólnym posiłkiem (2 h/dzień).</li>
-  <li>Tygodniowy pobyt z nauką języka francuskiego (konwersacja).</li>
-  <li>Kurs z permakultury z praktyką w zrównoważonym ogrodzie przy domu.</li>
-  <li>Możliwość skorzystania z opieki energetycznej. Więcej informacji u gospodyni.</li></ul>
-  </div>
-  <div class="teksty_atrakcje"><strong>Atrakcje w okolicy</strong><br><br>
-  <ul>
-  <li>Wycieczki szlakiem wygasłych wulkanów.</li>
-  <li>Spływ kajakiem po rzece Bóbr. </li>
-  <li>Konna wycieczka na ranczo „Jaskółka". </li>
-  <li>Ciepłe kąpiele w Termach Cieplickich.</li>
-  <li>Poszukiwanie agatów i ametystów na okolicznych polach i w nieczynnych kamieniołomach.</li>
-  <li>Dla miłośników historii zwiedzanie zamków i pałaców, z których słynie okolica.</li>
-  <li>Wyciągi narciarskie dla zimowych gości.</li></ul><br>
-  <strong>Targi i jarmarki</strong><br><br>
-  <ul>
-  <li>Targ lokalnej żywności i przetworów w Siedlęcinie (w każdą sobotę rano).</li>
-  <li>Giełda staroci i sprzedaż produktów lokalnych w Cieplicach (w każdą niedzielę).</li>
-  </div>
-  </div>
-  </div>
+    <div class="row content_white align-items-center" style="padding:40px 0px 40px 0px; flex-direction:column"
+      id="cennik">
+      <div class="text-center col-10">
+        <h2>Okolica i atrakcje</h2>
+      </div>
+
+      <div class="col-10">
+        <p class="text-center"><br>
+          Tu jesteśmy: Marczów, Pogórze Kaczawskie, Dolny Śląsk (między Złotoryją i Jelenią Górą).<br> Przez wieś
+          przebiega malowniczy żółty szlak łączący Wleń z Dębowym Gajem.</p><br>
+      </div>
+      <div class="atrakcje">
+        <div class="teksty_atrakcje"><strong>Co można u nas robić</strong><br><br>
+          <ul>
+            <li>Ogród pełen zakamarków – każdy spędza czas, jak&nbsp;lubi.</li>
+            <li>Przestrzeń i widoki idealne na plener malarski.</li>
+            <li>Dobry internet (światłowód), jeśli chcesz popracować.</li>
+          </ul><br><strong>
+            Dla chętnych</strong><br><br>
+          <ul>
+            <li>Kurs z kuchni makrobiotycznej zakończony wspólnym posiłkiem (2 h/dzień).</li>
+            <li>Tygodniowy pobyt z nauką języka francuskiego (konwersacja).</li>
+            <li>Kurs z permakultury z praktyką w zrównoważonym ogrodzie przy domu.</li>
+            <li>Możliwość skorzystania z opieki energetycznej. Więcej informacji u gospodyni.</li>
+          </ul>
+        </div>
+        <div class="teksty_atrakcje"><strong>Atrakcje w okolicy</strong><br><br>
+          <ul>
+            <li>Wycieczki szlakiem wygasłych wulkanów.</li>
+            <li>Spływ kajakiem po rzece Bóbr. </li>
+            <li>Konna wycieczka na ranczo „Jaskółka". </li>
+            <li>Ciepłe kąpiele w Termach Cieplickich.</li>
+            <li>Poszukiwanie agatów i ametystów na okolicznych polach i w nieczynnych kamieniołomach.</li>
+            <li>Dla miłośników historii zwiedzanie zamków i pałaców, z których słynie okolica.</li>
+            <li>Wyciągi narciarskie dla zimowych gości.</li>
+          </ul><br>
+          <strong>Targi i jarmarki</strong><br><br>
+          <ul>
+            <li>Targ lokalnej żywności i przetworów w Siedlęcinie (w każdą sobotę rano).</li>
+            <li>Giełda staroci i sprzedaż produktów lokalnych w Cieplicach (w każdą niedzielę).</li>
+            <li>Targ ekologiczny w Jeleniej Górze (w każdą sobotę rano).</li>
+        </div>
+      </div>
+    </div>
 
 
-<!--kontakt-->
+    <!--kontakt-->
 
-<div class="row flexy " id="kontakt" style="background-color: rgb(252, 250, 241); padding-top:40px;">
-  <div class="col-sm text-center kontakt" style="padding-bottom:20px; "><a href="tel:+48 790 444 809" ><i class="fa-solid fa-phone" style=""></i><br>+48 790 444 809</a>
+    <div class="row flexy " id="kontakt" style="background-color: rgb(252, 250, 241); padding-top:40px;">
+      <div class="col-sm text-center kontakt" style="padding-bottom:20px; "><a href="tel:+48 790 444 809"><i
+            class="fa-solid fa-phone"></i><br>+48 790 444 809</a>
+      </div>
+      <div class="col-sm text-center kontakt" style="padding-bottom:20px"><a href="mailto:cichochat@gmail.com"
+          style="font-size:1em"><i class="fa-solid fa-envelope"></i><br>cichochat@gmail.com</a>
+      </div>
+      <div class="col-sm text-center kontakt" style="padding-bottom:20px"><a
+          href="https://www.airbnb.pl/rooms/739866599789542906?guests=1&adults=1&s=67&unique_share_id=9eb8104a-d9e1-42f8-8cc9-ff15fafd87c2"><i
+            class="fa-brands fa-airbnb" style="font-size:1.5em"></i><br>zarezerwuj</a>
+      </div>
+      <div class="col-sm text-center kontakt" style="padding-bottom:20px; "><a
+          href="https://www.google.com/maps/place/Marczów+38,+59-613/@51.0449232,15.6270213,129m/data=!3m1!1e3!4m5!3m4!1s0x470f266fd6186be7:0x94658f4bac64fc6f!8m2!3d51.0449404!4d15.6275239"
+          target="_blank"><i class="bi bi-geo-alt" style="font-size:1.5em"></i><br>lokalizacja</a>
+      </div>
+
+    </div>
+    <hr>
+    <div>
+      <p class="text-center kontakt">Copyright &copy; Cicho Chat 2023 | realizacja: <a
+          href="mailto:j.z.sanecki@gmail.com">Jakub Sanecki</a></p>
+    </div>
+    <!-- zamknięcie kontenera-->
   </div>
-  <div class="col-sm text-center kontakt" style="padding-bottom:20px"><a href="mailto:cichochat@gmail.com" style="font-size:1em"><i class="fa-solid fa-envelope" ></i><br>cichochat@gmail.com</a>
-  </div>    
-  <div class="col-sm text-center kontakt" style="padding-bottom:20px"><a href="https://www.airbnb.pl/rooms/739866599789542906?guests=1&adults=1&s=67&unique_share_id=9eb8104a-d9e1-42f8-8cc9-ff15fafd87c2"><i class="fa-brands fa-airbnb" style="font-size:1.5em"></i><br>Zarezerwuj</a>
-  </div> 
-  
-</div>  
-<hr>
-<div>
-<p class="text-center kontakt">Copyright &copy; Cicho Chat 2022 | realizacja: <a href="mailto:j.z.sanecki@gmail.com">Jakub Sanecki</a></p></div>
-<!-- zamknięcie kontenera-->
-</div>
-  <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-  crossorigin="anonymous"
-  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
   <script>
-var loader = document.getElementById("loading");
-window.addEventListener("load", function(){
+    
+    var loader = document.getElementById("loading");
+    window.addEventListener("load", function(){
+     
+      loader.style.display = "none";
+    
+     
+    })
+ 
 
-  loader.style.display = "none";
-})
+    
+      </script>
+</body>
 
-
-  </script>
-  </body>
-  </html> 
+</html>
