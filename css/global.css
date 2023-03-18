@@ -147,6 +147,7 @@ h4 {
 	width: 60vw;
 	font-size: 1em;
 	text-align: right;
+	max-width: 1000px;
 }
 .teksty {
 	padding: 40px 0px 40px 0px;

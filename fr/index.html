@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cicho Chat</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="https://kit.fontawesome.com/3a050c0207.js" crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <div id="loading">
+      <img id="loading-image" src="http://serwer2223309.home.pl/cicho_chat/img/spinner2.svg" alt="Loading..." />
+    </div>
+  <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100" style="padding-right:20px;">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img width="100px" src="http://serwer2223309.home.pl/cicho_chat/img/CICHOCHAT_BEZ TŁA_CZARNE.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="border: 0">
+        <i class="fa-solid fa-bars burger"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+
+
+          <a class="nav-link" href="#pokoje">Espaces intérieurs</a>
+          <a class="nav-link" href="#cennik">Prix</a>
+          <a class="nav-link" href="gallery.html">Photos</a>
+          <a class="nav-link" href="dom.html">A propos</a>
+          <a class="nav-link" href="#kontakt">Contact</a>
+          <a  class="nav-link" href="../index.html">pl <img src="../img/icons/pl.png" height="10px" style="vertical-align: middle;"></a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <header>
+    <div class="bg-wrap" style="height:100vh;">
+      <div class="bg image-dark" style="background-image: url('http://serwer2223309.home.pl/cicho_chat/img/cichochat_dom.jpg');"></div>
+      <div class="shadow"></div>
+      <div class="herotxt">
+
+        <img style="width:80%; max-width:500px;" src="http://serwer2223309.home.pl/cicho_chat/img/CICHOCHAT_BEZ TŁA_BIALE_haslo.svg" alt="">
+
+      </div>
+    </div>
+  </header>
+  <div style="height:100vh;"></div>
+  <div class="container">
+    <div id="cytat">
+      <div id="opis">
+        <h2>Sur une petite colline</h2>
+        <p>…une demeure ancienne à colombages, perdue entre les champs et les
+          pâturages. Restaurée récemment avec des matériaux d’époque, elle offre une vue imprenable
+          sur l’Ostrzyca, un ancien volcan, appelé le Fujiyama polonais. Elle bénéficie du calme et de la
+          biodiversité du Parc naturel de la rivière Bobr. <br>Devant la maison, un verger de fruitiers et d’arbustes ainsi qu’un riche potager cultivé en
+          permaculture.
+          Côté Sud, vous trouverez plusieurs petits coins cachés, propices au repos et à la rêverie à
+          l’ombre d’un jeune parc arboré.
+          Côté Ouest, la maison est protégée du vent par des tilleuls et des frênes centenaires.</p>
+      </div>
+      <br>
+      <p id=odpocznij>J'invite!</p>
+    </div>
+
+    <!--miejsce-->
+    <div class="row px-0" id="miejsce">
+      <div class="col-md-6 flexy content_white">
+        <div class="teksty">
+          <h2>Au rez-de-chaussée :</h2>
+          <ul><br>
+            <li>une cuisine équipée réservée aux hôtes,</li>
+            <li>un salon-salle à manger avec une cheminée et une table pour 8 personnes.</li>
+          </ul>
+          <h2>A l’étage :</h2>
+          <ul><br>
+            <li>3 chambres, disposant chacune de sa salle de bain (douche) et de son WC,</li>
+            <li>un coin bibliothèque (bilingue français et polonais) avec canapé et fauteuil.</li>
+            </ul>
+            <ul>
+              <h2>Sous les toits :</h2>
+            <br><li>une pièce dédiée à la méditation et au yoga.</li>
+
+          </ul>
+
+        </div>
+      </div>
+      <div class="col-md-6 flexy_image" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/d1.jpg);">
+      </div>
+    </div>
+
+    <!-- Pokoje -->
+    <div class="row px=0 flexy" id="pokoje">
+      <div class="flexy">
+        <h2><br>Chambres<br><br></h2>
+      </div>
+      <div class="row px-0" style=" max-width:1200px; gap:10px;">
+        <div class="col-md room px-0"><a href="lawendowy.html">
+            <div class="room_in" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6075.jpg);"></div>
+            <h3 class="room_name">Lavande</h3>
+        </div></a>
+        <div class="col-md room px-0"><a href="zielony.html">
+            <div class="room_in" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/zielony/IMG_6074.jpg);"></div>
+            <h3 class="room_name">Verte</h3>
+        </div></a>
+        <div class="col-md room px-0"><a href="bialy.html">
+            <div class="room_in" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/bialy/IMG_6102.jpg);"></div>
+            <h3 class="room_name">Blanche</h3>
+        </div></a>
+        <div style="height:40px;"></div>
+      </div>
+    </div>
+
+    <!--Kuchnia-->
+    <div class="row rev">
+      <div class="col-md-6 flexy_image rev" flexy_image style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/cichochat_kuchnia.jpg);">
+      </div>
+      <div class="col-md-6  flexy content_bege">
+        <div class="teksty">
+          <h2>Cuisine</h2>
+          <p> Au rez-de-chaussée, une cuisine spacieuse, avec murs en pierres apparentes et cuisinière à
+            bois.<br>
+            A savoir : la maison est exclusivement végétarienne.</p><br><br>A disposition :
+          <ul>
+            <li>Réfrigérateur avec congélateur.</li>
+            <li>Lave-vaisselle.</li>
+            <li>Cuisinière à gaz à 5 feux.</li>
+            <li>Four.,</li>
+            <li>Divers équipements de cuisine.</li>
+            <li>Table pour 8 personnes dans la salle à manger.</li>
+          </ul>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--jadalnia i Strych-->
+    <div class="row">
+      <div class="col-md-6  flexy content_white">
+        <div class="teksty">
+          <h2>Salon – Salle à manger</h2>
+          <p>Un salon avec un sol en mélèze et un plafond d&#39;origine.
+            Régalez-vous autour de la grande table en bois.
+            Détendez-vous autour de la cheminée, sur un beau canapé et des fauteuils restaurés.
+          </p>
+          <h2>Grenier</h2>
+          <p> La salle Brzozowa, revêtue de bois de bouleau, vous accueille pour de la méditation, du yoga,
+            de la lecture ou autres activités.
+            La lumière est généreuse et le regard porte jusqu’à l’infini – ou presque.
+          </p>
+
+        </div>
+      </div>
+      <div class="col-md-6 flexy_image" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/d2.jpg);"></div>
+    </div>
+
+    <!--Cennik-->
+
+    <div class="row align-items-center " style="flex-direction:column;" id="cennik">
+      <div class="col text-center" style="padding-top:40px;">
+        <h2>Prix</h2>
+      </div>
+      <div class="col text-center"><strong>PLN 250 par chambre / jour (sans petit-déjeuner).</strong></div>
+      <div class="col-10 text-center">
+        <p><br>
+          Le prix ne comprend pas les petits déjeuners.
+          Sur réservation, l&#39;hôtesse peut préparer des petits déjeuners et dîners végétariens. En saison,
+          les légumes et les fruits biologiques poussent juste à côté - dans le potager.
+          Tarifs sur demande..</p><br>
+      </div>
+    </div>
+
+    <!--dodaltoke info-->
+    <div class="row">
+      <div class="col-md-6 flexy content_white">
+        <div class="teksty">
+          <h2>Informations complémentaires</h2>
+          <ul>
+            <li>La maison est adaptée uniquement à l’accueil des adultes.</li>
+            <li> Elle ne peut hélas pas accueillir de personnes à mobilité réduite.</li>
+            <li> Nous laissons les voitures au pied de la colline et marchons 50 mètres jusqu’à la maison.</li>
+            <li> Nous vous accueillons pour un séjour de deux nuits minimum.</li>
+            <li>Nous cuisinons uniquement végétarien et nous attendons de même des invités.</li>
+            <li>Nous demandons aux fumeurs de fumer dehors exclusivement.</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6 flexy_image" style="background-image:url(http://serwer2223309.home.pl/cicho_chat/img/cichochat_jadalnia.jpg);">
+      </div>
+    </div>
+
+
+    <!--kot-->
+    <div class=" flexy kot_bg content_bege" style="padding:40px 0px 40px 0px;">
+      <div class="text-center col-10">
+        <h2>Psst...</h2>
+        <p>Deux chats vivent dans la maison, ils lui ont également donné son nom. « Cicho Chat »
+          signifie « chat silencieux ».
+          Nous vous invitons à nous visiter sans animaux, mais vous en trouverez à caresser sur place !</p>
+      </div>
+    </div>
+
+
+    <!-- dodatkowe informacje-->
+
+    <div class="row content_white align-items-center" style="padding:40px 0px 40px 0px; flex-direction:column"
+      id="cennik">
+      <div class="text-center col-10">
+        <h2>Environs et attractions</h2>
+      </div>
+
+      <div class="col-10">
+        <p class="text-center"><br>
+          Nous sommes à Marczów, Pogórze Kaczawskie, Basse Silésie (entre Złotoryja et Jelenia
+Góra).<br> Un sentier de randonnée balisé, reliant Wleń à Dębowy Gaj, traverse le village.</p><br>
+      </div>
+      <div class="atrakcje">
+        <div class="teksty_atrakcje"><strong>Que pouvez-vous faire chez nous</strong><br><br>
+          <ul>
+            <li>Chacun occupe son temps comme il le souhaite dans ce jardin plein de coins et recoins.</li>
+            <li>L&#39;environnement est idéal pour la création artistique (écriture, peinture, etc.).</li>
+            <li>Bon internet (fibre optique) si vous voulez travailler.</li>
+          </ul><br><strong>
+            Autres activités possibles sur place</strong><br><br>
+          <ul>
+            <li>Cours de cuisine macrobiotique puis repas partagé (2 h / jour).</li>
+            <li>Une semaine de séjour avec initiation à la conversation en Polonais.</li>
+            <li>Cours de permaculture avec pratique dans le jardin.</li>
+            <li>Séances de soins énergétiques. Tarifs et informations complémentaires : nous contacter.</li>
+          </ul>
+        </div>
+        <div class="teksty_atrakcje"><strong>Attractions dans la région</strong><br><br>
+          <ul>
+            <li>Découverte des volcans éteints.</li>
+            <li>Kayak sur la rivière Bóbr.</li>
+            <li>Promenade à cheval au ranch &quot;Jaskółka&quot;.</li>
+            <li>Bains thermaux à Cieplice.</li>
+            <li>Recherche d&#39;agates et d&#39;améthystes dans les champs environnants et dans les anciennes
+              carrières.</li>
+            <li>Pour les amateurs d&#39;histoire, visite des châteaux et des palais pour lesquels la région
+              environnante est célèbre.</li>
+            <li>Pistes de ski en hiver.</li>
+          </ul><br>
+          <strong>Marchés et foires</strong><br><br>
+          <ul>
+            <li>Deux marchés de produits naturels et locaux tous les samedis matins : à Siedlęcin et à
+              Jelenia Góra.</li>
+            <li>Marché aux puces et vente de produits locaux à Cieplice (tous les dimanches).</li>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!--kontakt-->
+
+    <div class="row flexy " id="kontakt" style="background-color: rgb(252, 250, 241); padding-top:40px;">
+      <div class="col-sm text-center kontakt" style="padding-bottom:20px; "><a href="tel:+48 790 444 809"><i
+            class="fa-solid fa-phone"></i><br>+48 790 444 809</a>
+      </div>
+      <div class="col-sm text-center kontakt" style="padding-bottom:20px"><a href="mailto:cichochat@gmail.com"
+          style="font-size:1em"><i class="fa-solid fa-envelope"></i><br>cichochat@gmail.com</a>
+      </div>
+      <div class="col-sm text-center kontakt" style="padding-bottom:20px"><a
+          href="https://www.airbnb.pl/rooms/739866599789542906?guests=1&adults=1&s=67&unique_share_id=9eb8104a-d9e1-42f8-8cc9-ff15fafd87c2"><i
+            class="fa-brands fa-airbnb" style="font-size:1.5em"></i><br>Réservation</a>
+      </div>
+      <div class="col-sm text-center kontakt" style="padding-bottom:20px; "><a
+          href="https://www.google.com/maps/place/Marczów+38,+59-613/@51.0449232,15.6270213,129m/data=!3m1!1e3!4m5!3m4!1s0x470f266fd6186be7:0x94658f4bac64fc6f!8m2!3d51.0449404!4d15.6275239"
+          target="_blank"><i class="bi bi-geo-alt" style="font-size:1.5em"></i><br>emplacement</a>
+      </div>
+
+    </div>
+    <hr>
+    <div>
+      <p class="text-center kontakt">Copyright &copy; Cicho Chat 2023 | made by: <a
+          href="mailto:j.z.sanecki@gmail.com">Jakub Sanecki</a></p>
+    </div>
+    <!-- zamknięcie kontenera-->
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script>
+    
+    var loader = document.getElementById("loading");
+    window.addEventListener("load", function(){
+     
+      loader.style.display = "none";
+    
+     
+    })
+ 
+
+    
+      </script>
+</body>
+
+</html>
