@@ -15,14 +15,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/global.css" />
-  <script src="https://kit.fontawesome.com/3a050c0207.js" crossorigin="anonymous"></script>
-  <link href="css/glightbox.css" rel="stylesheet" />
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
   <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100" style="padding-right: 20px">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img width="100px" src="http://serwer2223309.home.pl/cicho_chat/img/CICHOCHAT_BEZ TŁA_CZARNE.svg" alt=""></a>
+      <a class="navbar-brand" href="index.html"><img width="100px" src="./img/CICHOCHAT_BEZ TŁA_CZARNE.svg" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="border: 0">
         <i class="fa-solid fa-bars burger"></i>
@@ -54,30 +53,22 @@
         </div>
       </div>
       <div class="col-sm-5 flexy_image" id="room-thumbnail" style="
-            background-image: url(http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6075.jpg);
+            background-image: url(./img/lawendowy1.webp);
           "></div>
     </div>
 
-    <div class="row px-sm-5 my-sm-5">
-      <div class="col-sm-6">
+<!-- galeria -->
+<span id="lawendowy"></span>
+<div class="row m-0 p-0" id="gallery"></div>
 
-        <a href="http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6075.jpg" class="glightbox"><img class="img-fluid p-1"
-            src="http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6075.jpg" /></a>
-        <a href="http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6076.jpg" class="glightbox"><img class="img-fluid p-1"
-            src="http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6076.jpg" /></a>
-        <a href="http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6078.jpg" class="glightbox"><img class="img-fluid p-1"
-            src="http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6078.jpg" /></a>
-
-      </div>
-      <div class="col-sm-6">
-
-        <a href="http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6080.jpg" class="glightbox"><img class="img-fluid p-1"
-            src="http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6080.jpg" /></a>
-        <a href="http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6083.jpg" class="glightbox"><img class="img-fluid p-1"
-            src="http://serwer2223309.home.pl/cicho_chat/img/lawendowy/IMG_6083.jpg" /></a>
-
-      </div>
-    </div>
+<div class="popup-image fixed-top p-0">
+  <img class="gal-img" src="" alt="" />
+  
+<div class="close-icon"></div>
+    <div class="prev-icon"></div>
+  <div class="next-icon"></div>
+</div>
+    
     <hr />
     <div>
       <p class="text-center kontakt">Copyright &copy; Cicho Chat 2023 | realizacja: <a
@@ -89,15 +80,9 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 
-  <script src="js/glightbox.js"></script>
+  <script src="js/gallery.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    const lightbox = GLightbox({
-      touchNavigation: true,
-      loop: false,
-      autoplayVideos: true,
-    });
-  </script>
+
 </body>
 
 </html>
