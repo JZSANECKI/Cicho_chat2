@@ -14,29 +14,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../css/global.css" />
-  <script src="https://kit.fontawesome.com/3a050c0207.js" crossorigin="anonymous"></script>
-  <link href="../css/glightbox.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/global.css" />
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target="#navbar">
-  <div id="loading">
-    <img id="loading-image" src="http://serwer2223309.home.pl/cicho_chat/img/spinner.svg" alt="Loading..." />
-  </div>
+
   <nav id="navbar" class="navbar navbar-expand-lg position-fixed top-0 w-100" style="padding-right: 20px">
     <div class="container">
-      <a class="navbar-brand" href="index.html"><img width="100px" src="http://serwer2223309.home.pl/cicho_chat/img/CICHOCHAT_BEZ TŁA_CZARNE.svg" alt=""></a>
+      <a class="navbar-brand" href="index_fr.html"><img width="100px" src="./img/CICHOCHAT_BEZ TŁA_CZARNE.svg" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" style="border: 0">
         <i class="fa-solid fa-bars burger"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="index.html#pokoje">pokoje</a>
-          <a class="nav-link" href="dom.html">historia</a>
-          <a class="nav-link" href="index.html#cennik">cennik</a>
-          <a class="nav-link" href="index.html#kontakt">kontakt</a>
-          <a  class="nav-link" href="../gallery.html">pl <img src="../img/icons/pl.png" height="10px" style="vertical-align: middle;"></a>
+          <a class="nav-link" href="index_fr.html#pokoje">Espaces intérieurs</a>
+          <a class="nav-link" href="dom_fr.html">A propos</a>
+          <a class="nav-link" href="index_fr.html#cennik">prix</a>
+          <a class="nav-link" href="index_fr.html#kontakt">contact</a>
+          <a  class="nav-link" href="gallery.html">pl <img src="./img/icons/pl.png" height="10px" style="vertical-align: middle;"></a>
         </div>
       </div>
     </div>
@@ -46,103 +43,22 @@
 
     </div>
 
-    <div class="row px-sm-5">
-      <div class="col-sm-6">
-        <div class="row">
-          <div class="col-md-6">
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/dom/IMG8269.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/dom/IMG8269.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/dom/IMG_5907.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/dom/IMG_5907.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/dom/IMG_1620.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/dom/IMG_1620.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/dom/IMG_1883.JPG" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/dom/IMG_1883.JPG" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/dom/IMG_5631.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/dom/IMG_5631.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/rozne/261a9017-f384-4cc5-9393-7738fdc7df52.JPG" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/rozne/261a9017-f384-4cc5-9393-7738fdc7df52.JPG" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/rozne/IMG_5606.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/rozne/IMG_5606.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/rozne/IMG_5741.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/rozne/IMG_5741.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/rozne/IMG_5946.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/rozne/IMG_5946.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/rozne/IMG_5970.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/rozne/IMG_5970.jpg" /></a>
-                
+<!-- galeria  -->
+<span id="galeria"></span>
+<div class="row m-0 p-0" id="gallery"></div>
 
+<div class="popup-image fixed-top p-0">
+  <img class="gal-img" src="" alt="" />
+  
+<div class="close-icon"></div>
+    <div class="prev-icon"></div>
+  <div class="next-icon"></div>
+</div>
+<!-- --- -->
 
-
-          </div>
-          <div class="col-md-6">
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/kuchnia_letnia/IMG_5603.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/kuchnia_letnia/IMG_5603.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/kuchnia_letnia/IMG_5684.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/kuchnia_letnia/IMG_5684.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/kuchnia_letnia/IMG_5685.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/kuchnia_letnia/IMG_5685.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/kuchnia_letnia/IMG_5695.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/kuchnia_letnia/IMG_5695.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/wspolne/IMG_5958.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/wspolne/IMG_5958.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/wspolne/IMG_5973.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/wspolne/IMG_5973.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/wspolne/IMG_5976.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/wspolne/IMG_5976.jpg" /></a>
-                <a href="http://serwer2223309.home.pl/cicho_chat/http://serwer2223309.home.pl/cicho_chat/img/wspolne/IMG_6069.jpg" class="glightbox"><img class="img-fluid p-1"
-                  src="http://serwer2223309.home.pl/cicho_chat/img/thumb/wspolne/IMG_6069.jpg" /></a>
-            
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="row">
-          <div class="col-md-6">
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/ogrod/IMG_1619.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/ogrod/IMG_1619.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/ogrod/IMG_1880.JPG" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/ogrod/IMG_1880.JPG" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/ogrod/IMG_5703.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/ogrod/IMG_5703.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/ogrod/IMG_5706.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/ogrod/IMG_5706.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/ogrod/IMG_5910.JPG" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/ogrod/IMG_5910.JPG" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/ogrod/IMG_5922.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/ogrod/IMG_5922.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/ogrod/IMG_5924.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/ogrod/IMG_5924.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/ogrod/IMG_6055.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/ogrod/IMG_6055.jpg" /></a>
-          </div>
-          <div class="col-md-6">
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/okolica/IMG_5709.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/okolica/IMG_5709.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/okolica/IMG_5764.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/okolica/IMG_5764.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/okolica/IMG_5996.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/okolica/IMG_5996.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/okolica/IMG_6011.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/okolica/IMG_6011.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/okolica/IMG_6037.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/okolica/IMG_6037.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/okolica/IMG_6040.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/okolica/IMG_6040.jpg" /></a>
-            <a href="http://serwer2223309.home.pl/cicho_chat/img/okolica/IMG_6047.jpg" class="glightbox"><img class="img-fluid p-1"
-                src="http://serwer2223309.home.pl/cicho_chat/img/thumb/okolica/IMG_6047.jpg" /></a>
-                <a href="http://serwer2223309.home.pl/cicho_chat/img/wspolne/IMG_6065.jpg" class="glightbox"><img class="img-fluid p-1"
-                  src="http://serwer2223309.home.pl/cicho_chat/img/thumb/wspolne/IMG_6065.jpg" /></a>
-              <a href="http://serwer2223309.home.pl/cicho_chat/img/wspolne/IMG_6067.jpg" class="glightbox"><img class="img-fluid p-1"
-                  src="http://serwer2223309.home.pl/cicho_chat/img/thumb/wspolne/IMG_6067.jpg" /></a>
-
-          </div>
-        </div>
-      </div>
-    </div>
     <hr />
     <div>
-      <p class="text-center kontakt">Copyright &copy; Cicho Chat 2023 | realizacja: <a
+      <p class="text-center kontakt">Copyright &copy; Cicho Chat 2023 | made by: <a
           href="mailto:j.z.sanecki@gmail.com">Jakub Sanecki</a></p>
     </div>
   </div>
@@ -151,28 +67,9 @@
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
 
-  <script src="js/glightbox.js"></script>
-  <script src="js/main.js"></script>
-  <script>
-    const lightbox = GLightbox({
-      touchNavigation: true,
-      loop: false,
-      autoplayVideos: true,
-    });
-  </script>
-    <script>
-    
-      var loader = document.getElementById("loading");
-      window.addEventListener("load", function(){
-       
-        loader.style.display = "none";
-      
-       
-      })
-   
-  
-      
-        </script>
+  <script src="./js/gallery.js"></script>
+  <script src="./js/main.js"></script>
+
 </body>
 
 </html>
