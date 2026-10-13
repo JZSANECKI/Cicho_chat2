@@ -157,10 +157,10 @@ h4 {
   text-align: center;
 }
 #miejsce_obraz {
-  background-image: url(http://serwer2223309.home.pl/cicho_chat/img/chichochat_dom.jpg);
+  background-image: url(../img/cichochat_dom.webp);
 }
 .kot_bg {
-  background-image: url(http://serwer2223309.home.pl/cicho_chat/img/kocie_lapki.png);
+  background-image: url(../img/kocie_lapki.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
@@ -177,7 +177,7 @@ h4 {
 .image {
   height: 100vh;
   position: relative;
-  background-image: url(http://serwer2223309.home.pl/cicho_chat/img/chichochat_dom.jpg);
+  background-image: url(../img/cichochat_dom.webp);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

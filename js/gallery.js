@@ -24,9 +24,8 @@ const row = document.querySelector('#gallery');
 
 
 const makeImg = (x) => {
-  div = document.createElement('div');
+  const div = document.createElement('div');
   row.appendChild(div);
-  document.querySelectorAll('div');
   div.classList.add('col-md-3', 'col-sm-4', 'gallery', 'gal');
   div.setAttribute('style', `background-image: url(${x});`);
 
@@ -47,83 +46,38 @@ if(tableId==="lawendowy"){
 
 const gal = document.querySelectorAll('.gal');
 const pop = document.querySelector('.popup-image');
+const img = document.querySelector('.gal-img');
+
+// aktualnie wyświetlane zdjęcie
+let currentTarget = null;
+
+const showImg = (target) => {
+  currentTarget = target;
+  img.setAttribute('src', target.getAttribute('style').slice(22, -2));
+}
 
 const clickEventGallery = (e) => {
-
-  let classCheck = e.target.classList
-
-
-  let classCheckVar = classCheck.contains("gal")
- if(classCheckVar!=true){return}
-
-
   pop.classList.add('popup-image-active');
-
-  const img = document.querySelector('.gal-img');
-
-  let bgattr = e.target.getAttribute('style');
-  if (bgattr !== null){
-  let newurl = bgattr.slice(22, -2);
-
-  img.setAttribute('src', newurl);
-
-
-  
-  
-  // nawigacja
-  let currentTarget = e.target;
-  
-  nextBtnFn =() => {
-    let checkNext = currentTarget.nextSibling
-
-
-
-    if(checkNext == null){
-      return
-      }
-    currentTarget=currentTarget.nextSibling
-    bgattrAlt = currentTarget.getAttribute('style');
-    let nextUrl = bgattrAlt.slice(22, -2);
-    img.setAttribute('src', nextUrl);
-
-
-    }
-
-  prevBtnFn =() => {
-    let checkPrev = currentTarget.previousSibling
-    if(checkPrev == null){
-      return
-      }
-    currentTarget=currentTarget.previousSibling
-    bgattrAlt = currentTarget.getAttribute('style');
-    let prevUrl = bgattrAlt.slice(22, -2);
-    img.setAttribute('src', prevUrl);
-
-    }
-
-
-  nextBtn.addEventListener("click", nextBtnFn)
-  prevBtn.addEventListener("click", prevBtnFn)
-  
-  // koniec nawigacji
-
-}
-
-closeBtnFn = () =>{
-  pop.classList.remove('popup-image-active');  
-
-}
-closeBtn.addEventListener("click", closeBtnFn)
-
+  showImg(e.currentTarget);
 };
+
+// nawigacja
+nextBtn.addEventListener("click", () => {
+  if (currentTarget && currentTarget.nextElementSibling) {
+    showImg(currentTarget.nextElementSibling);
+  }
+});
+prevBtn.addEventListener("click", () => {
+  if (currentTarget && currentTarget.previousElementSibling) {
+    showImg(currentTarget.previousElementSibling);
+  }
+});
+closeBtn.addEventListener("click", () => {
+  pop.classList.remove('popup-image-active');
+});
 
 const width = window.innerWidth
 
 if(width > 576){
- 
-
-gal.forEach(() => addEventListener("click", clickEventGallery));
+  gal.forEach((item) => item.addEventListener("click", clickEventGallery));
 }
-
-
-
